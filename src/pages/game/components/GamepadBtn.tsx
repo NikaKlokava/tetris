@@ -1,5 +1,9 @@
+import classnames from "classnames";
 import cl from "./styles.module.css";
 
-export const GamepadBtn = () => {
-  return <div className={cl.gamepad_btn}></div>;
+type Props = {
+  type: string;
+};
+export const GamepadBtn = ({ type }: Props) => {
+  return <div className={classnames(cl.gamepad_btn, cl[`btn_${type}`])}></div>;
 };
