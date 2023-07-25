@@ -1,0 +1,30 @@
+.game_field {
+  width: 200px;
+  height: 400px;
+  border: 1px solid gray;
+}
+
+.success_field {
+  width: fit-content;
+  border: 1px solid red;
+}
+
+.gamepad_wrapper {
+  width: fit-content;
+  border: 1px solid black;
+}
+
+.gamepad_btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 17px;
+  border: 2px solid gray;
+}
+
+.success_item {
+  width: 100px;
+  min-height: 20px;
+  font-size: 18px;
+  border: 2px solid gray;
+  /* background: transparent; */
+}

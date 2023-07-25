@@ -1,0 +1,7 @@
+.error {
+  font-size: 30px;
+  color: rgb(166, 18, 2);
+  text-shadow: 2px 3px 4px rgb(174, 18, 18);
+  text-align: center;
+  padding-top: 50px;
+}
