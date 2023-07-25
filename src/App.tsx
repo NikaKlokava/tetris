@@ -1,5 +1,16 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Error } from "./pages/error";
+import { Tetris } from "./pages/game";
+
 function App() {
-  return <div className="App"></div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/tetris" element={<Tetris />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
