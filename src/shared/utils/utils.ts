@@ -75,3 +75,22 @@ export const getRandomTetromino = () => {
 
   return TETROMINOES[randomShape];
 };
+
+export const checkIfcollided = (
+  figure: any,
+  stage: any,
+  { x: moveX, y: moveY }: any
+) => {
+  figure.shape.forEach((row: any, y: any) => {
+    row.forEach((elem: any, x: any) => {
+      if (elem !== 0) {
+        if (
+          !stage[y + figure.position.y + moveY] ||
+          !stage[y + figure.position.y + moveY][x + figure.position.x + moveX]
+        ) {
+          console.log("here");
+        }
+      }
+    });
+  });
+};

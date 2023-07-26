@@ -1,12 +1,20 @@
 .tetris_wrapper {
   height: 100vh;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 6fr 1fr;
 }
 
-.tetris_content {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.page_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .tetris_wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }

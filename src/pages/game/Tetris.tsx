@@ -41,9 +41,9 @@ export const Tetris = () => {
       tabIndex={0}
       onKeyDown={(e) => move(e)}
     >
+      <GameField stage={stage} />
       <Header />
-      <div className={cl.tetris_content}>
-        <GameField stage={stage} />
+      <div className={cl.page_content}>
         <SuccessField onStartGame={startGame} />
         <Gamepad />
       </div>
