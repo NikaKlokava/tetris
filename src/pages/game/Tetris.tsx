@@ -5,12 +5,14 @@ import { Gamepad, GameField, SuccessField } from "./components";
 import { isEqual } from "lodash";
 import cl from "./tetris.module.css";
 import { useStage } from "../../shared/hooks/useStage";
+import { createGameField } from "../../shared/utils/utils";
 
 export const Tetris = () => {
   const { figure, updateFigurePos, updateFigure } = useFigure();
-  const {stage, setStage} = useStage()
+  const { stage, setStage } = useStage({ figure });
 
   const startGame = () => {
+    setStage(createGameField());
     updateFigure();
   };
 
@@ -41,8 +43,8 @@ export const Tetris = () => {
     >
       <Header />
       <div className={cl.tetris_content}>
-        <GameField />
-        <SuccessField />
+        <GameField stage={stage} />
+        <SuccessField onStartGame={startGame} />
         <Gamepad />
       </div>
       <Footer />
