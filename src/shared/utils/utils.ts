@@ -67,7 +67,7 @@ const TETROMINOES = {
   },
 };
 
-export const generateRandomTetromino = () => {
+export const getRandomTetromino = () => {
   const shapeTypes: ShapeTypes[] = ["I", "O", "T", "S", "Z", "J", "L"];
 
   const randomShape: ShapeTypes =
