@@ -1,9 +1,13 @@
-.game_field {
-  width: 250px;
-  height: 400px;
+.game_field_wrapper {
+  display: grid;
+  height: fit-content;
   justify-self: flex-end;
   border: 3px solid rgb(162, 162, 162);
   background-color: rgb(16, 16, 16);
+}
+
+.cell {
+  border: 1px solid rgba(128, 128, 128, 0.091);
 }
 
 .success_field {
