@@ -1,10 +1,15 @@
+import { TETROMINOES } from "../../../shared/utils/utils";
 import cl from "./styles.module.css";
 
-export const Cell = () => {
+type Props = {
+  type: ShapeTypes;
+};
+
+export const Cell = ({ type }: Props) => {
   return (
     <div
       className={cl.cell}
-      //   style={{ backgroundColor: `${randomTetrColor}` }}
+      style={{ backgroundColor: `${TETROMINOES[type].color}` }}
     ></div>
   );
 };

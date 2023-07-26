@@ -7,8 +7,8 @@ export const createGameField = (): FieldData => {
   );
 };
 
-const TETROMINOES = {
-  init: { shape: [[0]], color: "rgb(16,16,16)" },
+export const TETROMINOES = {
+  0: { shape: [[0]], color: "rgb(16,16,16)" },
   I: {
     shape: [
       [0, "I", 0, 0],
