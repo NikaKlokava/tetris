@@ -1,22 +1,32 @@
-import { useEffect, useState } from "react";
-import { createGameField } from "../utils/utils";
-import { isEqual } from "lodash";
+import { useEffect, useRef, useState } from "react";
+import { createGameField, EMPTY_TETROMINO } from "../utils/utils";
+import { isEqual, clone } from "lodash";
+import { useFigure } from "./useFigure";
 
-export const useStage = ({ figure }: { figure: FigureType }) => {
+export const useStage = () => {
   const [stage, setStage] = useState<FieldData>(createGameField());
+  const { figure, updateFigurePos, updateFigure } = useFigure();
+  // const prevStage = useRef<FieldData>(stage);
 
   useEffect(() => {
-    const updateFieldData = (prevStage: FieldData) => {
+    const drawFigure = (prevStage: FieldData) => {
       const newStage = prevStage.map((row) =>
-        row.map((elem, i) => (isEqual(elem[1], "empty") ? [0, "empty"] : elem))
+        row.map((elem) =>
+          isEqual(elem[1], EMPTY_TETROMINO.color)
+            ? [0, EMPTY_TETROMINO.color]
+            : elem
+        )
       );
 
-      figure.shape.forEach((row, y) => {
+      // const occupiedStage = clone(prevStage.current);
+      // console.log(occupiedStage);
+
+      figure.tetromino.shape.forEach((row, y) => {
         row.forEach((elem, x) => {
-          if (!isEqual(elem, 0)) {
+          if (isEqual(elem, 1)) {
             newStage[y + figure.position.y][x + figure.position.x] = [
               elem,
-              `${figure.collided ? "occupied" : "empty"}`,
+              figure.tetromino.color,
             ];
           }
         });
@@ -25,8 +35,21 @@ export const useStage = ({ figure }: { figure: FigureType }) => {
       return newStage;
     };
 
-    setStage((prev) => updateFieldData(prev));
+    setStage((prev) => drawFigure(prev));
   }, [figure]);
 
-  return { stage, setStage };
+  const moveFigure = (dir: number) => {
+    updateFigurePos({ x: dir, y: 0 });
+  };
+
+  const dropFigure = () => {
+    updateFigurePos({ x: 0, y: 1 });
+  };
+
+  const startGame = () => {
+    updateFigure();
+    // setStage(createGameField());
+  };
+
+  return { stage, moveFigure, dropFigure, startGame };
 };

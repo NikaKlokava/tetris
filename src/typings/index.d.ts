@@ -4,12 +4,11 @@ declare type FieldRow = Array<Cell>;
 
 declare type FieldData = Array<FieldRow>;
 
-declare type ShapeTypes = 0 | "I" | "O" | "T" | "S" | "Z" | "J" | "L" ;
+declare type ShapeTypes = "I" | "O" | "T" | "S" | "Z" | "J" | "L";
 
 declare type FigurePosition = {
   x: number;
   y: number;
-  collided: boolean;
 };
 
 declare type FigureType = {
@@ -17,6 +16,5 @@ declare type FigureType = {
     x: number;
     y: number;
   };
-  shape: (string | number)[][] | string[][];
-  collided: boolean;
+  tetromino: { shape: number[][]; color: string };
 };
