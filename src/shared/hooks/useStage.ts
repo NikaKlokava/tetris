@@ -1,55 +1,74 @@
 import { useEffect, useRef, useState } from "react";
-import { createGameField, EMPTY_TETROMINO } from "../utils/utils";
-import { isEqual, clone } from "lodash";
+import {
+  getFutureSum,
+  createGameField,
+  getSumInField,
+  getOccupiedStage,
+  drowTetrominoInField,
+} from "../utils/utils";
 import { useFigure } from "./useFigure";
+import { clone } from "lodash";
 
 export const useStage = () => {
   const [stage, setStage] = useState<FieldData>(createGameField());
-  const { figure, updateFigurePos, updateFigure } = useFigure();
-  // const prevStage = useRef<FieldData>(stage);
+  const { figure, updateFigurePos, updateFigure, rotateFigure, setFigure } =
+    useFigure();
+  // const [occupied, setOccupied] = useState<boolean>(false);
+  const prevStage = useRef<FieldData>(stage);
+  const prevSum = useRef<number>(0);
 
   useEffect(() => {
-    const drawFigure = (prevStage: FieldData) => {
-      const newStage = prevStage.map((row) =>
-        row.map((elem) =>
-          isEqual(elem[1], EMPTY_TETROMINO.color)
-            ? [0, EMPTY_TETROMINO.color]
-            : elem
-        )
-      );
+    const drawFigure = () => {
+      const occupiedStage = getOccupiedStage(prevStage.current);
 
-      // const occupiedStage = clone(prevStage.current);
-      // console.log(occupiedStage);
+      drowTetrominoInField(figure, occupiedStage, 0, 0);
 
-      figure.tetromino.shape.forEach((row, y) => {
-        row.forEach((elem, x) => {
-          if (isEqual(elem, 1)) {
-            newStage[y + figure.position.y][x + figure.position.x] = [
-              elem,
-              figure.tetromino.color,
-            ];
-          }
-        });
-      });
+      const num = getSumInField(occupiedStage);
+      if (num !== prevSum.current) updateFigure();
 
-      return newStage;
+      return occupiedStage;
     };
 
-    setStage((prev) => drawFigure(prev));
+    setStage(() => drawFigure());
+
+    prevSum.current = getSumInField(stage);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [figure]);
 
   const moveFigure = (dir: number) => {
-    updateFigurePos({ x: dir, y: 0 });
+    const futureSum = getFutureSum(figure, prevStage, dir, 0);
+    if (futureSum === prevSum.current) updateFigurePos({ x: dir, y: 0 });
   };
 
   const dropFigure = () => {
-    updateFigurePos({ x: 0, y: 1 });
+    const futureSum = getFutureSum(figure, prevStage, 0, 1);
+    if (futureSum === prevSum.current) {
+      updateFigurePos({ x: 0, y: 1 });
+    } else {
+      prevStage.current = stage;
+      updateFigurePos({ x: 0, y: 0 });
+    }
   };
 
   const startGame = () => {
     updateFigure();
-    // setStage(createGameField());
   };
 
-  return { stage, moveFigure, dropFigure, startGame };
+  const rotate = () => {
+    const figureCopy = clone(figure);
+    const newRotatedFigure = rotateFigure(figureCopy);
+    const sum = getSumInField(stage);
+    // console.log(sum, prevSum.current);
+    // console.log("x", figure.position.x, "y", figure.position.y);
+    if (sum === prevSum.current)
+      setFigure((prev) => ({
+        ...prev,
+        tetromino: {
+          shape: newRotatedFigure,
+          color: figure.tetromino.color,
+        },
+      }));
+  };
+
+  return { stage, moveFigure, dropFigure, rotate, startGame };
 };

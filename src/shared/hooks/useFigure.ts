@@ -25,5 +25,14 @@ export const useFigure = () => {
     });
   }, []);
 
-  return { figure, updateFigurePos, updateFigure };
+  const rotateFigure = (figure: FigureType) => {
+    const newFigure = figure.tetromino.shape.map((_, i) =>
+      figure.tetromino.shape.map((col) => {
+        return col[i];
+      })
+    );
+    return newFigure.map((row) => row.reverse());
+  };
+
+  return { figure, updateFigurePos, updateFigure, rotateFigure, setFigure };
 };

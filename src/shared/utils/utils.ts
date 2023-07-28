@@ -1,3 +1,6 @@
+import { isEqual } from "lodash";
+import { clone } from "lodash";
+
 export const FIELD_WIDTH = 12;
 export const FIELD_HEIGHT = 20;
 
@@ -74,4 +77,59 @@ export const getRandomTetromino = () => {
   return TETROMINOES[randomShape as ShapeTypes];
 };
 
-// export const checkIfcollided = () => {};
+export const getOccupiedStage = (prevStage: FieldData) => {
+  return prevStage.map((row) =>
+    row.map((elem) =>
+      isEqual(elem[1], EMPTY_TETROMINO.color)
+        ? [0, EMPTY_TETROMINO.color]
+        : elem
+    )
+  );
+};
+
+export const drowTetrominoInField = (
+  figure: FigureType,
+  stage: FieldData,
+  moveX?: number,
+  moveY?: number
+) => {
+  figure.tetromino.shape.forEach((row: any, y: any) => {
+    row.forEach((elem: any, x: any) => {
+      if (isEqual(elem, 1)) {
+        stage[y + figure.position.y + moveY][x + figure.position.x + moveX] = [
+          elem,
+          figure.tetromino.color,
+        ];
+      }
+    });
+  });
+};
+
+export const getSumInField = (arr: FieldData) => {
+  return arr.reduce((accumulator, fieldRow, rowIndex) => {
+    if (isEqual(rowIndex, arr.length - 1)) return accumulator;
+    const numsInRow = fieldRow.reduce(
+      (accum: number, cell: Cell, index: number) => {
+        if (isEqual(index, 0) || isEqual(index, fieldRow.length - 1))
+          return accum;
+        return accum + cell[0];
+      },
+      0
+    );
+    return (accumulator += numsInRow);
+  }, 0);
+};
+
+export const getFutureSum = (
+  figure: any,
+  stage: any,
+  moveX: number,
+  moveY: number
+) => {
+  const copyStage = clone(stage.current);
+  const occupiedFutureStage = getOccupiedStage(copyStage);
+
+  drowTetrominoInField(figure, occupiedFutureStage, moveX, moveY);
+
+  return getSumInField(occupiedFutureStage);
+};
