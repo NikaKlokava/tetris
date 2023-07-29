@@ -77,7 +77,7 @@ export const getRandomTetromino = () => {
   return TETROMINOES[randomShape as ShapeTypes];
 };
 
-export const getOccupiedStage = (prevStage: FieldData) => {
+export const getOccupiedStage = (prevStage: FieldData): FieldData => {
   return prevStage.map((row) =>
     row.map((elem) =>
       isEqual(elem[1], EMPTY_TETROMINO.color)
@@ -107,6 +107,7 @@ export const drowTetrominoInField = (
 
 export const getSumInField = (arr: FieldData) => {
   return arr.reduce((accumulator, fieldRow, rowIndex) => {
+    //slice
     if (isEqual(rowIndex, arr.length - 1)) return accumulator;
     const numsInRow = fieldRow.reduce(
       (accum: number, cell: Cell, index: number) => {
@@ -132,4 +133,14 @@ export const getFutureSum = (
   drowTetrominoInField(figure, occupiedFutureStage, moveX, moveY);
 
   return getSumInField(occupiedFutureStage);
+};
+
+export const rotateFigure = (figure: FigureType) => {
+  const shape = figure.tetromino.shape.map((_, i) =>
+    figure.tetromino.shape.map((col) => {
+      return col[i];
+    })
+  );
+
+  figure.tetromino.shape = shape.map((row) => row.reverse());
 };

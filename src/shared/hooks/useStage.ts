@@ -5,15 +5,16 @@ import {
   getSumInField,
   getOccupiedStage,
   drowTetrominoInField,
+  rotateFigure,
 } from "../utils/utils";
 import { useFigure } from "./useFigure";
-import { clone } from "lodash";
+import { cloneDeep } from "lodash";
 
 export const useStage = () => {
   const [stage, setStage] = useState<FieldData>(createGameField());
-  const { figure, updateFigurePos, updateFigure, rotateFigure, setFigure } =
+  const { figure, updateFigurePos, updateFigure, createNewFigure } =
     useFigure();
-  // const [occupied, setOccupied] = useState<boolean>(false);
+
   const prevStage = useRef<FieldData>(stage);
   const prevSum = useRef<number>(0);
 
@@ -24,46 +25,46 @@ export const useStage = () => {
       drowTetrominoInField(figure, occupiedStage, 0, 0);
 
       const num = getSumInField(occupiedStage);
-      if (num !== prevSum.current) updateFigure();
+      if (num !== prevSum.current) createNewFigure();
 
-      return occupiedStage;
+      setStage(occupiedStage);
     };
 
-    setStage(() => drawFigure());
+    drawFigure();
 
     prevSum.current = getSumInField(stage);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [figure]);
 
-  const moveFigure = (dir: number) => {
+  const moveFigure = (dir: -1 | 1) => {
     const futureSum = getFutureSum(figure, prevStage.current, dir, 0);
     if (futureSum === prevSum.current) updateFigurePos({ x: dir, y: 0 });
   };
 
   const dropFigure = () => {
     const futureSum = getFutureSum(figure, prevStage.current, 0, 1);
+
     if (futureSum === prevSum.current) {
       updateFigurePos({ x: 0, y: 1 });
     } else {
       prevStage.current = stage;
-      updateFigurePos({ x: 0, y: 0 });
+      createNewFigure();
     }
   };
 
   const startGame = () => {
-    updateFigure();
+    createNewFigure();
   };
 
   const rotate = () => {
-    const figureCopy = clone(figure);
-    figureCopy.tetromino.shape = rotateFigure(figureCopy, 1);
+    const figureCopy = cloneDeep(figure);
+    rotateFigure(figureCopy);
 
     const sum = getFutureSum(figureCopy, prevStage.current, 0, 0);
-    console.log(sum, prevSum.current);
-    if (sum !== prevSum.current) {
-      figureCopy.tetromino.shape = rotateFigure(figureCopy, -1);
+
+    if (sum === prevSum.current) {
+      updateFigure(figureCopy);
     }
-    setFigure(figureCopy);
   };
 
   return { stage, moveFigure, dropFigure, rotate, startGame };
