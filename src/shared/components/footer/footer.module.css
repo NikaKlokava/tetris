@@ -39,3 +39,17 @@
 .github {
   background-image: url("../../../assets/github.svg");
 }
+
+@media screen and (max-width:600px) {
+  .footer_text {
+    font-size: 12px;
+  }
+
+  .instagram,
+  .linkedin,
+  .github {
+    width: 19px;
+    height: 19px;
+    background-size: 19px 19px;
+  }
+}

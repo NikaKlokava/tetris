@@ -1,9 +1,13 @@
 .game_field_wrapper {
   display: grid;
+  grid-template-columns: repeat(12, 4.75vh);
+  grid-template-rows: repeat(20, 4.75vh);
   height: fit-content;
   justify-self: flex-end;
+  align-self: center;
   border: 3px solid rgb(162, 162, 162);
   background-color: rgb(16, 16, 16);
+  grid-row: 1/5;
 }
 
 .cell {
@@ -11,10 +15,9 @@
 }
 
 .success_field {
-  width: fit-content;
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 20px;
 }
 
 .success_item,
@@ -37,9 +40,12 @@
 
 .gamepad_wrapper {
   display: flex;
-  justify-self: flex-end;
   justify-content: space-around;
-  min-width: 250px;
+  border: 2px solid rgb(162, 162, 162);
+  border-radius: 10px;
+  column-gap: 30px;
+  padding: 10px;
+  background-color: rgb(16, 16, 16);
 }
 
 .gamepad_btn {
@@ -54,6 +60,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 25px;
+  row-gap: 15px;
   align-items: center;
 }
 
@@ -81,4 +88,41 @@
   height: 50px;
   border-radius: 11px;
   background: url("../../../assets/rotate.svg");
+}
+
+
+@media screen and (max-width: 600px) {
+  .game_field_wrapper {
+    justify-self: center;
+    align-self: center;
+    grid-row: 2/3;
+    grid-template-columns: repeat(12, 2.75vh);
+    grid-template-rows: repeat(20, 2.75vh);
+  }
+
+  .success_field {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .success_item,
+  .start_game_btn {
+    width: 80px;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 7px;
+  }
+
+  .start_game_btn {
+    grid-column: 1/ 5;
+    grid-row: 1/2;
+    justify-self: center;
+  }
+
+  .gamepad_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    column-gap: 40px;
+  }
 }

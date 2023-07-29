@@ -1,32 +1,70 @@
-import { useEffect, useState } from "react";
-import { createGameField } from "../utils/utils";
-import { isEqual } from "lodash";
+import { useEffect, useRef, useState } from "react";
+import {
+  getFutureSum,
+  createGameField,
+  getSumInField,
+  getOccupiedStage,
+  drowTetrominoInField,
+} from "../utils/utils";
+import { useFigure } from "./useFigure";
+import { clone } from "lodash";
 
-export const useStage = ({ figure }: { figure: FigureType }) => {
+export const useStage = () => {
   const [stage, setStage] = useState<FieldData>(createGameField());
+  const { figure, updateFigurePos, updateFigure, rotateFigure, setFigure } =
+    useFigure();
+  // const [occupied, setOccupied] = useState<boolean>(false);
+  const prevStage = useRef<FieldData>(stage);
+  const prevSum = useRef<number>(0);
 
   useEffect(() => {
-    const updateFieldData = (prevStage: FieldData) => {
-      const newStage = prevStage.map((row) =>
-        row.map((elem, i) => (isEqual(elem[1], "empty") ? [0, "empty"] : elem))
-      );
+    const drawFigure = () => {
+      const occupiedStage = getOccupiedStage(prevStage.current);
 
-      figure.shape.forEach((row, y) => {
-        row.forEach((elem, x) => {
-          if (!isEqual(elem, 0)) {
-            newStage[y + figure.position.y][x + figure.position.x] = [
-              elem,
-              `${figure.collided ? "occupied" : "empty"}`,
-            ];
-          }
-        });
-      });
+      drowTetrominoInField(figure, occupiedStage, 0, 0);
 
-      return newStage;
+      const num = getSumInField(occupiedStage);
+      if (num !== prevSum.current) updateFigure();
+
+      return occupiedStage;
     };
 
-    setStage((prev) => updateFieldData(prev));
+    setStage(() => drawFigure());
+
+    prevSum.current = getSumInField(stage);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [figure]);
 
-  return { stage, setStage };
+  const moveFigure = (dir: number) => {
+    const futureSum = getFutureSum(figure, prevStage.current, dir, 0);
+    if (futureSum === prevSum.current) updateFigurePos({ x: dir, y: 0 });
+  };
+
+  const dropFigure = () => {
+    const futureSum = getFutureSum(figure, prevStage.current, 0, 1);
+    if (futureSum === prevSum.current) {
+      updateFigurePos({ x: 0, y: 1 });
+    } else {
+      prevStage.current = stage;
+      updateFigurePos({ x: 0, y: 0 });
+    }
+  };
+
+  const startGame = () => {
+    updateFigure();
+  };
+
+  const rotate = () => {
+    const figureCopy = clone(figure);
+    figureCopy.tetromino.shape = rotateFigure(figureCopy, 1);
+
+    const sum = getFutureSum(figureCopy, prevStage.current, 0, 0);
+    console.log(sum, prevSum.current);
+    if (sum !== prevSum.current) {
+      figureCopy.tetromino.shape = rotateFigure(figureCopy, -1);
+    }
+    setFigure(figureCopy);
+  };
+
+  return { stage, moveFigure, dropFigure, rotate, startGame };
 };
