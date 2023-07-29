@@ -25,13 +25,14 @@ export const useFigure = () => {
     });
   }, []);
 
-  const rotateFigure = (figure: FigureType) => {
-    const newFigure = figure.tetromino.shape.map((_, i) =>
+  const rotateFigure = (figure: FigureType, dir: number) => {
+    const newRotatedFigure = figure.tetromino.shape.map((_, i) =>
       figure.tetromino.shape.map((col) => {
         return col[i];
       })
     );
-    return newFigure.map((row) => row.reverse());
+    if (dir > 0) return newRotatedFigure.map((row) => row.reverse());
+    return newRotatedFigure.reverse()
   };
 
   return { figure, updateFigurePos, updateFigure, rotateFigure, setFigure };

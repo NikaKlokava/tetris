@@ -36,12 +36,12 @@ export const useStage = () => {
   }, [figure]);
 
   const moveFigure = (dir: number) => {
-    const futureSum = getFutureSum(figure, prevStage, dir, 0);
+    const futureSum = getFutureSum(figure, prevStage.current, dir, 0);
     if (futureSum === prevSum.current) updateFigurePos({ x: dir, y: 0 });
   };
 
   const dropFigure = () => {
-    const futureSum = getFutureSum(figure, prevStage, 0, 1);
+    const futureSum = getFutureSum(figure, prevStage.current, 0, 1);
     if (futureSum === prevSum.current) {
       updateFigurePos({ x: 0, y: 1 });
     } else {
@@ -56,18 +56,14 @@ export const useStage = () => {
 
   const rotate = () => {
     const figureCopy = clone(figure);
-    const newRotatedFigure = rotateFigure(figureCopy);
-    const sum = getSumInField(stage);
-    // console.log(sum, prevSum.current);
-    // console.log("x", figure.position.x, "y", figure.position.y);
-    if (sum === prevSum.current)
-      setFigure((prev) => ({
-        ...prev,
-        tetromino: {
-          shape: newRotatedFigure,
-          color: figure.tetromino.color,
-        },
-      }));
+    figureCopy.tetromino.shape = rotateFigure(figureCopy, 1);
+
+    const sum = getFutureSum(figureCopy, prevStage.current, 0, 0);
+    console.log(sum, prevSum.current);
+    if (sum !== prevSum.current) {
+      figureCopy.tetromino.shape = rotateFigure(figureCopy, -1);
+    }
+    setFigure(figureCopy);
   };
 
   return { stage, moveFigure, dropFigure, rotate, startGame };

@@ -121,12 +121,12 @@ export const getSumInField = (arr: FieldData) => {
 };
 
 export const getFutureSum = (
-  figure: any,
-  stage: any,
+  figure: FigureType,
+  stage: FieldData,
   moveX: number,
   moveY: number
 ) => {
-  const copyStage = clone(stage.current);
+  const copyStage = clone(stage);
   const occupiedFutureStage = getOccupiedStage(copyStage);
 
   drowTetrominoInField(figure, occupiedFutureStage, moveX, moveY);
