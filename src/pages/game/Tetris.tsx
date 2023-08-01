@@ -4,9 +4,11 @@ import { Gamepad, GameField, SuccessField } from "./components";
 import { isEqual } from "lodash";
 import cl from "./tetris.module.css";
 import { useStage } from "../../shared/hooks/useStage";
+import { useInterval } from "../../shared/hooks/useInterval";
 
 export const Tetris = () => {
-  const { stage, moveFigure, dropFigure, rotate, startGame } = useStage();
+  const { stage,delay,completedRow, moveFigure, dropFigure, rotate, startGame } = useStage();
+  
 
   const move = ({ keyCode }: { keyCode: number }) => {
     isEqual(keyCode, 37) && moveFigure(-1);
@@ -14,6 +16,8 @@ export const Tetris = () => {
     isEqual(keyCode, 40) && dropFigure();
     isEqual(keyCode, 32) && rotate();
   };
+
+  useInterval(() => dropFigure(), delay);
 
   return (
     <div
@@ -25,7 +29,7 @@ export const Tetris = () => {
       <GameField stage={stage} />
       <Header />
       <div className={cl.page_content}>
-        <SuccessField onStartGame={startGame} />
+        <SuccessField onStartGame={startGame} completedRow={completedRow}/>
         <Gamepad />
       </div>
       <Footer />

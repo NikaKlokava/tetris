@@ -145,18 +145,30 @@ export const rotateFigure = (figure: FigureType) => {
   figure.tetromino.shape = shape.map((row) => row.reverse());
 };
 
-export const clearCompletedRow = (stage: FieldData) => {
-  stage.forEach((row) => {
-    const sumInRow = row.reduce((accum, curr) => {
-      accum += curr[0];
-      return accum;
-    }, 0);
+// export const clearCompletedRow = (stage: FieldData) => {
+//   stage.forEach((row) => {
+//     const sumInRow = row.reduce((accum, curr) => {
+//       accum += curr[0];
+//       return accum;
+//     }, 0);
 
-    if (isEqual(sumInRow, FIELD_WIDTH)) {
-      const index = stage.indexOf(row);
-      stage.splice(index, 1);
+//     if (isEqual(sumInRow, FIELD_WIDTH)) {
+//       const index = stage.indexOf(row);
+//       stage.splice(index, 1);
 
-      stage.unshift(new Array(row.length).fill([0, EMPTY_TETROMINO.color]));
-    }
-  });
-};
+//       stage.unshift(new Array(row.length).fill([0, EMPTY_TETROMINO.color]));
+//     }
+//   });
+// };
+
+// export const getSumInRow = (stage: FieldData) => {
+//   return stage.reduce((accumulator, current) => {
+//     const sumInRow = current.reduce((accum, curr) => {
+//       accum += curr[0];
+//       return accum;
+//     }, 0);
+//     accumulator.push(sumInRow);
+
+//     return accumulator;
+//   }, []);
+// };
