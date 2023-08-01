@@ -18,22 +18,17 @@ export const useFigure = () => {
     }));
   };
 
-  const updateFigure = useCallback((): void => {
+  const createNewFigure = useCallback((): void => {
     setFigure({
       position: { x: FIELD_WIDTH / 2 - 1, y: 0 },
       tetromino: getRandomTetromino(),
     });
   }, []);
 
-  const rotateFigure = (figure: FigureType, dir: number) => {
-    const newRotatedFigure = figure.tetromino.shape.map((_, i) =>
-      figure.tetromino.shape.map((col) => {
-        return col[i];
-      })
-    );
-    if (dir > 0) return newRotatedFigure.map((row) => row.reverse());
-    return newRotatedFigure.reverse()
-  };
+  const updateFigure = (newFigure : FigureType) => {
+    setFigure(newFigure)
+  }
 
-  return { figure, updateFigurePos, updateFigure, rotateFigure, setFigure };
+
+  return { figure, updateFigurePos, updateFigure, createNewFigure, setFigure };
 };
