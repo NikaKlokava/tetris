@@ -6,6 +6,7 @@ import {
   getOccupiedStage,
   drowTetrominoInField,
   rotateFigure,
+  clearCompletedRow,
 } from "../utils/utils";
 import { useFigure } from "./useFigure";
 import { cloneDeep } from "lodash";
@@ -15,24 +16,21 @@ export const useStage = () => {
   const { figure, updateFigurePos, updateFigure, createNewFigure } =
     useFigure();
 
+  const [completedRow, setCompletedRow] = useState(0);
+
   const prevStage = useRef<FieldData>(stage);
   const prevSum = useRef<number>(0);
 
   useEffect(() => {
     const drawFigure = () => {
       const occupiedStage = getOccupiedStage(prevStage.current);
-
       drowTetrominoInField(figure, occupiedStage, 0, 0);
-
-      const num = getSumInField(occupiedStage);
-      if (num !== prevSum.current) createNewFigure();
+      prevSum.current = getSumInField(occupiedStage);
 
       setStage(occupiedStage);
     };
 
     drawFigure();
-
-    prevSum.current = getSumInField(stage);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [figure]);
 
@@ -47,6 +45,8 @@ export const useStage = () => {
     if (futureSum === prevSum.current) {
       updateFigurePos({ x: 0, y: 1 });
     } else {
+      clearCompletedRow(stage);
+      setCompletedRow((prev) => prev + 1);
       prevStage.current = stage;
       createNewFigure();
     }
