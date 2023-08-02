@@ -6,13 +6,15 @@ import {
   getOccupiedStage,
   drowTetrominoInField,
   rotateFigure,
-  clearCompletedRow,
+  EMPTY_TETROMINO,
+  FIELD_WIDTH,
 } from "../utils/utils";
 import { useFigure } from "./useFigure";
-import { cloneDeep } from "lodash";
+import { cloneDeep, isEqual } from "lodash";
 
 export const useStage = () => {
   const [stage, setStage] = useState<FieldData>(createGameField());
+
   const { figure, updateFigurePos, updateFigure, createNewFigure } =
     useFigure();
 
@@ -23,6 +25,7 @@ export const useStage = () => {
 
   useEffect(() => {
     const drawFigure = () => {
+      setCompletedRow(0);
       const occupiedStage = getOccupiedStage(prevStage.current);
       drowTetrominoInField(figure, occupiedStage, 0, 0);
       prevSum.current = getSumInField(occupiedStage);
@@ -46,7 +49,7 @@ export const useStage = () => {
       updateFigurePos({ x: 0, y: 1 });
     } else {
       clearCompletedRow(stage);
-      setCompletedRow((prev) => prev + 1);
+
       prevStage.current = stage;
       createNewFigure();
     }
@@ -67,5 +70,28 @@ export const useStage = () => {
     }
   };
 
-  return { stage, moveFigure, dropFigure, rotate, startGame };
+  const clearCompletedRow = (stage: FieldData) => {
+    stage.forEach((row) => {
+      const sumInRow = row.reduce((accum, curr) => {
+        accum += curr[0];
+        return accum;
+      }, 0);
+
+      if (isEqual(sumInRow, FIELD_WIDTH)) {
+        const index = stage.indexOf(row);
+        stage.splice(index, 1);
+        stage.unshift(new Array(row.length).fill([0, EMPTY_TETROMINO.color]));
+        setCompletedRow((prev) => prev + 1);
+      }
+    });
+  };
+
+  return {
+    stage,
+    completedRow,
+    moveFigure,
+    dropFigure,
+    rotate,
+    startGame,
+  };
 };
