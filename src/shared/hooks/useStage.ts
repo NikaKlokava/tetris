@@ -6,17 +6,15 @@ import {
   getOccupiedStage,
   drowTetrominoInField,
   rotateFigure,
-  // clearCompletedRow,
   EMPTY_TETROMINO,
   FIELD_WIDTH,
-  // getSumInRow,
 } from "../utils/utils";
 import { useFigure } from "./useFigure";
 import { cloneDeep, isEqual } from "lodash";
 
 export const useStage = () => {
   const [stage, setStage] = useState<FieldData>(createGameField());
-  const [delay, setDelay] = useState<number | null>(null);
+
   const { figure, updateFigurePos, updateFigure, createNewFigure } =
     useFigure();
 
@@ -27,6 +25,7 @@ export const useStage = () => {
 
   useEffect(() => {
     const drawFigure = () => {
+      setCompletedRow(0);
       const occupiedStage = getOccupiedStage(prevStage.current);
       drowTetrominoInField(figure, occupiedStage, 0, 0);
       prevSum.current = getSumInField(occupiedStage);
@@ -57,7 +56,6 @@ export const useStage = () => {
   };
 
   const startGame = () => {
-    setDelay(1000);
     createNewFigure();
   };
 
@@ -90,7 +88,6 @@ export const useStage = () => {
 
   return {
     stage,
-    delay,
     completedRow,
     moveFigure,
     dropFigure,

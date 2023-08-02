@@ -4,6 +4,8 @@ import { clone } from "lodash";
 export const FIELD_WIDTH = 12;
 export const FIELD_HEIGHT = 20;
 
+export const linePoints = [40, 100, 300, 1200];
+
 export const createGameField = (): FieldData => {
   return Array.from(Array(FIELD_HEIGHT + 1), () =>
     new Array(FIELD_WIDTH + 2).fill([0, EMPTY_TETROMINO.color])
@@ -144,31 +146,9 @@ export const rotateFigure = (figure: FigureType) => {
 
   figure.tetromino.shape = shape.map((row) => row.reverse());
 };
-
-// export const clearCompletedRow = (stage: FieldData) => {
-//   stage.forEach((row) => {
-//     const sumInRow = row.reduce((accum, curr) => {
-//       accum += curr[0];
-//       return accum;
-//     }, 0);
-
-//     if (isEqual(sumInRow, FIELD_WIDTH)) {
-//       const index = stage.indexOf(row);
-//       stage.splice(index, 1);
-
-//       stage.unshift(new Array(row.length).fill([0, EMPTY_TETROMINO.color]));
-//     }
-//   });
-// };
-
-// export const getSumInRow = (stage: FieldData) => {
-//   return stage.reduce((accumulator, current) => {
-//     const sumInRow = current.reduce((accum, curr) => {
-//       accum += curr[0];
-//       return accum;
-//     }, 0);
-//     accumulator.push(sumInRow);
-
-//     return accumulator;
-//   }, []);
-// };
+// const linePoints = [40, 100, 300, 1200]
+// const calculateScore = () => {
+//   if(completedRow > 0) {
+//     setScore(prev => prev + linePoints[completedRow - 1] * (level + 1) );
+//   }
+// }
