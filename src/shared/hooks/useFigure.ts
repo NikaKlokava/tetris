@@ -25,10 +25,9 @@ export const useFigure = () => {
     });
   }, []);
 
-  const updateFigure = (newFigure : FigureType) => {
-    setFigure(newFigure)
-  }
+  const updateFigure = (newFigure: FigureType) => {
+    setFigure(newFigure);
+  };
 
-
-  return { figure, updateFigurePos, updateFigure, createNewFigure, setFigure };
+  return { figure, updateFigurePos, updateFigure, createNewFigure };
 };
