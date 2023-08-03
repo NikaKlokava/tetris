@@ -23,7 +23,7 @@ export const Tetris = () => {
   const { score, totalRows, updateScore } = useScore({ completedRow, level });
 
   useEffect(() => {
-    if (totalRows > (level + 1) * 1) {
+    if (totalRows > (level + 1) * 10) {
       setLevel((prev) => prev + 1);
       setDelay(1000 / (level + 1) + 200);
     }
