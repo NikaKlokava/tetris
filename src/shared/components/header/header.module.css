@@ -1,0 +1,25 @@
+.header_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_title {
+  font-size: 30px;
+  color: rgba(198, 198, 198, 0.717);
+}
+
+h1 {
+  margin: 0px;
+}
+
+@media screen and (max-width:600px) {
+  .header_wrapper {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .header_title {
+    font-size: 20px;
+  }
+}

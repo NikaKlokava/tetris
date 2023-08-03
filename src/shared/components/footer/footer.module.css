@@ -1,0 +1,55 @@
+.footer_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_text {
+  font-size: 14px;
+  color: rgba(198, 198, 198, 0.717);
+}
+
+.footer_links {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.link {
+  align-self: center;
+  border-radius: 2px;
+}
+
+.instagram,
+.linkedin,
+.github {
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+}
+
+.instagram {
+  background-image: url("../../../assets/instagram.svg");
+}
+
+.linkedin {
+  background-image: url("../../../assets/linkedin.svg");
+}
+
+.github {
+  background-image: url("../../../assets/github.svg");
+}
+
+@media screen and (max-width:600px) {
+  .footer_text {
+    font-size: 12px;
+  }
+
+  .instagram,
+  .linkedin,
+  .github {
+    width: 19px;
+    height: 19px;
+    background-size: 19px 19px;
+  }
+}
