@@ -21,5 +21,10 @@ export const useScore = ({ completedRow, level }: Props) => {
     calculateScore();
   }, [calculateScore]);
 
-  return { score, totalRows };
+  const updateScore = () => {
+    setScore(0);
+    setTotalRows(0);
+  };
+
+  return { score, totalRows, updateScore };
 };

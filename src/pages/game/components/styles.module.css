@@ -15,6 +15,7 @@
 }
 
 .success_field {
+  min-height: 205px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -36,6 +37,12 @@
   background-color: gray;
   color: rgb(16, 16, 16);
   cursor: pointer;
+}
+
+.game_over {
+  font-size: 30px;
+  color: rgb(166, 18, 2);
+  text-shadow: 2px 3px 4px rgb(174, 18, 18);
 }
 
 .gamepad_wrapper {
@@ -100,7 +107,13 @@
     grid-template-rows: repeat(20, 2.75vh);
   }
 
+  .game_over {
+    font-size: 20px;
+    grid-column: 1/5;
+  }
+
   .success_field {
+    min-height: 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;

@@ -33,9 +33,9 @@ export const TETROMINOES = {
   },
   T: {
     shape: [
-      [0, 0, 0],
       [1, 1, 1],
       [0, 1, 0],
+      [0, 0, 0],
     ],
     color: "#7579E6",
   },
@@ -79,8 +79,8 @@ export const getRandomTetromino = () => {
   return TETROMINOES[randomShape as ShapeTypes];
 };
 
-export const getOccupiedStage = (prevStage: FieldData): FieldData => {
-  return prevStage.map((row) =>
+export const getOccupiedStage = (prevStage: FieldData | null): FieldData => {
+  return prevStage!.map((row) =>
     row.map((elem) =>
       isEqual(elem[1], EMPTY_TETROMINO.color)
         ? [0, EMPTY_TETROMINO.color]
@@ -125,7 +125,7 @@ export const getSumInField = (arr: FieldData) => {
 
 export const getFutureSum = (
   figure: FigureType,
-  stage: FieldData,
+  stage: FieldData | null,
   moveX: number,
   moveY: number
 ) => {

@@ -14,18 +14,19 @@ import { cloneDeep, isEqual } from "lodash";
 
 export const useStage = () => {
   const [stage, setStage] = useState<FieldData>(createGameField());
+  const [gameOver, setGameOver] = useState<boolean>(false);
 
   const { figure, updateFigurePos, updateFigure, createNewFigure } =
     useFigure();
 
-  const [completedRow, setCompletedRow] = useState(0);
+  const [completedRow, setCompletedRows] = useState(0);
 
   const prevStage = useRef<FieldData>(stage);
   const prevSum = useRef<number>(0);
 
   useEffect(() => {
     const drawFigure = () => {
-      setCompletedRow(0);
+      setCompletedRows(0);
       const occupiedStage = getOccupiedStage(prevStage.current);
       drowTetrominoInField(figure, occupiedStage, 0, 0);
       prevSum.current = getSumInField(occupiedStage);
@@ -38,25 +39,35 @@ export const useStage = () => {
   }, [figure]);
 
   const moveFigure = (dir: -1 | 1) => {
-    const futureSum = getFutureSum(figure, prevStage.current, dir, 0);
-    if (futureSum === prevSum.current) updateFigurePos({ x: dir, y: 0 });
+    if (!gameOver) {
+      const futureSum = getFutureSum(figure, prevStage.current, dir, 0);
+      if (futureSum === prevSum.current) updateFigurePos({ x: dir, y: 0 });
+    }
   };
 
   const dropFigure = () => {
-    const futureSum = getFutureSum(figure, prevStage.current, 0, 1);
+    if (!gameOver) {
+      const futureSum = getFutureSum(figure, prevStage.current, 0, 1);
 
-    if (futureSum === prevSum.current) {
-      updateFigurePos({ x: 0, y: 1 });
-    } else {
-      clearCompletedRow(stage);
+      if (futureSum === prevSum.current) {
+        updateFigurePos({ x: 0, y: 1 });
+      } else {
+        if (figure.position.y < 1) {
+          setGameOver(true);
+        }
 
-      prevStage.current = stage;
-      createNewFigure();
+        clearCompletedRow(stage);
+
+        prevStage.current = stage;
+        createNewFigure();
+      }
     }
   };
 
   const startGame = () => {
+    setGameOver(false);
     createNewFigure();
+    prevStage.current = createGameField();
   };
 
   const rotate = () => {
@@ -81,7 +92,7 @@ export const useStage = () => {
         const index = stage.indexOf(row);
         stage.splice(index, 1);
         stage.unshift(new Array(row.length).fill([0, EMPTY_TETROMINO.color]));
-        setCompletedRow((prev) => prev + 1);
+        setCompletedRows((prev) => prev + 1);
       }
     });
   };
@@ -89,6 +100,7 @@ export const useStage = () => {
   return {
     stage,
     completedRow,
+    gameOver,
     moveFigure,
     dropFigure,
     rotate,
