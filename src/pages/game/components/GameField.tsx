@@ -6,6 +6,8 @@ type Props = {
   stage: FieldData;
 };
 export const GameField = memo(({ stage }: Props) => {
+  console.log("field");
+
   return (
     <div className={cl.game_field_wrapper}>
       {stage.slice(0, -1).map((row) => {

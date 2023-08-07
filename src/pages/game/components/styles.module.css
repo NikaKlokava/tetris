@@ -14,14 +14,14 @@
   border: 1px solid rgba(58, 58, 58, 0.557);
 }
 
-.success_field {
+.tablo {
   min-height: 205px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
-.success_item,
+.tablo_item,
 .game_btn {
   width: 150px;
   padding: 5px;
@@ -167,14 +167,14 @@
     grid-column: 1/5;
   }
 
-  .success_field {
+  .tablo {
     min-height: 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
 
-  .success_item,
+  .tablo_item,
   .start_game_btn,
   .pause_game_btn {
     width: 80px;

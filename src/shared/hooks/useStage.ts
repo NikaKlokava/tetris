@@ -38,6 +38,14 @@ export const useStage = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [figure]);
 
+  useEffect(() => {
+    document.addEventListener("keydown", (event) => {
+      console.log(
+        `Key: ${event.key} with keycode ${event.keyCode} has been pressed`
+      );
+    });
+  }, []);
+
   const moveFigure = (dir: -1 | 1) => {
     if (!gameOver) {
       const futureSum = getFutureSum(figure, prevStage.current, dir, 0);

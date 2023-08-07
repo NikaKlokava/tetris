@@ -6,7 +6,8 @@ type Props = {
   onPress: () => void;
 };
 
-export const PlayPauseBtn = memo(({ onPress, text }: Props) => {
+export const Button = memo(({ onPress, text }: Props) => {
+  console.log("btn");
   return (
     <button className={cl.game_btn} onClick={onPress}>
       {text}

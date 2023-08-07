@@ -8,6 +8,7 @@ type Props = {
   onMouseUp?: () => void;
 };
 export const GamepadBtn = memo(({ type, onPress, onMouseUp }: Props) => {
+  // console.log("render gamepad btn");
   return (
     <div
       className={classnames(cl.gamepad_btn, cl[`btn_${type}`])}

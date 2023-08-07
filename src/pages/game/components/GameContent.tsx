@@ -1,12 +1,12 @@
 import { GameField } from "./GameField";
-import { SuccessField } from "./SuccessField";
+import { Tablo } from "./Tablo";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useStage } from "../../../shared/hooks/useStage";
 import { useScore } from "../../../shared/hooks/useScore";
 import { useInterval } from "../../../shared/hooks/useInterval";
 import { Gamepad } from "./Gamepad";
-import { PlayPauseBtn } from "./PlayPauseBtn";
-import { ModalWindow } from "./ModalWindow";
+import { Button } from "./Button";
+import { PauseModal } from "./PauseModal";
 import cl from "../tetris.module.css";
 
 export const GameContent = () => {
@@ -69,16 +69,16 @@ export const GameContent = () => {
     <>
       <GameField stage={stage} />
       <div className={cl.page_content}>
-        <SuccessField
+        <Tablo
           rows={totalRows}
           level={level}
           score={score}
           gameOver={gameOver}
         />
         <div className={cl.start_pause_wrapper}>
-          <PlayPauseBtn text="Start Game" onPress={handleStartGameClick} />
+          <Button text="Start Game" onPress={handleStartGameClick} />
           {pauseBtn.current && !gameOver && (
-            <PlayPauseBtn text="Pause" onPress={handlePauseGameClick} />
+            <Button text="Pause" onPress={handlePauseGameClick} />
           )}
         </div>
         <div className={cl.gamepad_wrapper}>
@@ -90,7 +90,7 @@ export const GameContent = () => {
           />
         </div>
       </div>
-      {pause && <ModalWindow onPlay={handleContinuePlayClick} />}
+      {pause && <PauseModal onPlay={handleContinuePlayClick} />}
     </>
   );
 };
