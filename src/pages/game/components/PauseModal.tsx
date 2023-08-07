@@ -9,9 +9,7 @@ export const PauseModal = ({ onPlay }: Props) => {
   return (
     <div className={cl.modal_wrapper}>
       <div className={cl.modal_container}>
-        <div className={cl.modal_title}>Pause</div>
-        {/* <div className={cl.pause_icon}></div> */}
-        <Button text="Play" onPress={onPlay} />
+        <Button text="Resume" onPress={onPlay} />
       </div>
     </div>
   );

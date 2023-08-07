@@ -7,7 +7,6 @@ type Props = {
 };
 
 export const Button = memo(({ onPress, text }: Props) => {
-  console.log("btn");
   return (
     <button className={cl.game_btn} onClick={onPress}>
       {text}

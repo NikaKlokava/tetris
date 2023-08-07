@@ -21,13 +21,14 @@ export const GameContent = () => {
     dropFigure,
     startGame,
     moveFigure,
+    moveDownFigure,
     rotate,
   } = useStage();
 
   const { score, totalRows, updateScore } = useScore({ completedRow, level });
 
   useEffect(() => {
-    if (totalRows > (level + 1) * 10) {
+    if (totalRows > (level + 1) * 1) {
       setLevel((prev) => prev + 1);
       setDelay(1000 / (level + 1) + 200);
     }
@@ -48,22 +49,16 @@ export const GameContent = () => {
     setDelay(null);
   }, []);
 
-  const handleContinuePlayClick = useCallback(() => {
-    console.log(delay);
+  const handleResumeGameClick = useCallback(() => {
     setPause(false);
     setDelay(1000 / (level + 1) + 200);
-  }, [level, delay]);
-
-  const handleMouseUp = () => {
-    setDelay(1000 / (level + 1) + 200);
-  };
-
-  const handleDropFigureClick = () => {
-    dropFigure();
-    setDelay(null);
-  };
+  }, [level]);
 
   useInterval(() => dropFigure(), delay);
+
+  const handleDropFigureClick = () => {
+    moveDownFigure();
+  };
 
   return (
     <>
@@ -86,11 +81,11 @@ export const GameContent = () => {
             move={moveFigure}
             drop={handleDropFigureClick}
             rotate={rotate}
-            up={handleMouseUp}
+            // up={handleMouseUp}
           />
         </div>
       </div>
-      {pause && <PauseModal onPlay={handleContinuePlayClick} />}
+      {pause && <PauseModal onPlay={handleResumeGameClick} />}
     </>
   );
 };

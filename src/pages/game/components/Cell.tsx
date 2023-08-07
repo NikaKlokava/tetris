@@ -2,7 +2,7 @@ import { memo } from "react";
 import cl from "./styles.module.css";
 
 type Props = {
-  type: string;//!
+  type: FigureColors;
 };
 
 export const Cell = memo(({ type }: Props) => {

@@ -9,7 +9,6 @@ type Props = {
 };
 
 export const Tablo = memo(({ rows, level, score, gameOver }: Props) => {
-  console.log("tablo");
   return (
     <div className={cl.tablo}>
       {gameOver ? (
