@@ -11,8 +11,7 @@ type Props = {
 
 export class Gamepad extends Component<Props> {
   shouldComponentUpdate(nextProps: Readonly<Props>): boolean {
-    if (nextProps !== this.props) return false;
-    return true;
+    return false;
   }
 
   render(): ReactNode {

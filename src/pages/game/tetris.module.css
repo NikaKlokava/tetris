@@ -12,16 +12,11 @@
   align-items: center;
 }
 
-.start_game_btn {
-  width: 150px;
-  font-family: 'Orbitron', sans-serif;
-  line-height: 30px;
-  font-size: 18px;
-  border: 2px solid rgb(162, 162, 162);
-  border-radius: 10px;
-  background-color: gray;
-  color: rgb(16, 16, 16);
-  cursor: pointer;
+.start_pause_wrapper {
+  min-height: 95px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -30,8 +25,9 @@
     grid-template-rows: auto;
   }
 
-  .start_game_btn {
-    line-height: 20px;
-    font-size: 14px;
+  .start_pause_wrapper {
+    min-height: 0px;
+    flex-direction: row;
+    column-gap: 20px;
   }
 }

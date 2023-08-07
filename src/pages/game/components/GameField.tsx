@@ -8,7 +8,7 @@ type Props = {
 export const GameField = memo(({ stage }: Props) => {
   return (
     <div className={cl.game_field_wrapper}>
-      {stage.slice(0, -1).map((row, y) => {
+      {stage.slice(0, -1).map((row) => {
         return row.slice(1, -1).map((cell, i) => {
           return <Cell key={i} type={cell[1]} />;
         });

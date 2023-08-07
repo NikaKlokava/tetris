@@ -1,16 +1,19 @@
 import { GameField } from "./GameField";
 import { SuccessField } from "./SuccessField";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useStage } from "../../../shared/hooks/useStage";
 import { useScore } from "../../../shared/hooks/useScore";
 import { useInterval } from "../../../shared/hooks/useInterval";
-import { StartGameBtn } from "./StartGameBtn";
 import { Gamepad } from "./Gamepad";
+import { PlayPauseBtn } from "./PlayPauseBtn";
+import { ModalWindow } from "./ModalWindow";
 import cl from "../tetris.module.css";
 
 export const GameContent = () => {
   const [delay, setDelay] = useState<number | null>(null);
   const [level, setLevel] = useState(0);
+  const [pause, setPause] = useState(false);
+  const pauseBtn = useRef(false);
   const {
     stage,
     completedRow,
@@ -36,17 +39,29 @@ export const GameContent = () => {
     setLevel(0);
     setDelay(1200);
     updateScore();
+    pauseBtn.current = true;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const handleMouseUp = useCallback(() => {
-    setDelay(1000 / (level + 1) + 200);
-  }, [level]);
+  const handlePauseGameClick = useCallback(() => {
+    setPause(true);
+    setDelay(null);
+  }, []);
 
-  const handleDropFigureClick = useCallback(() => {
+  const handleContinuePlayClick = useCallback(() => {
+    console.log(delay);
+    setPause(false);
+    setDelay(1000 / (level + 1) + 200);
+  }, [level, delay]);
+
+  const handleMouseUp = () => {
+    setDelay(1000 / (level + 1) + 200);
+  };
+
+  const handleDropFigureClick = () => {
     dropFigure();
     setDelay(null);
-  }, [dropFigure]);
+  };
 
   useInterval(() => dropFigure(), delay);
 
@@ -60,7 +75,12 @@ export const GameContent = () => {
           score={score}
           gameOver={gameOver}
         />
-        <StartGameBtn onPress={handleStartGameClick} />
+        <div className={cl.start_pause_wrapper}>
+          <PlayPauseBtn text="Start Game" onPress={handleStartGameClick} />
+          {pauseBtn.current && !gameOver && (
+            <PlayPauseBtn text="Pause" onPress={handlePauseGameClick} />
+          )}
+        </div>
         <div className={cl.gamepad_wrapper}>
           <Gamepad
             move={moveFigure}
@@ -70,6 +90,7 @@ export const GameContent = () => {
           />
         </div>
       </div>
+      {pause && <ModalWindow onPlay={handleContinuePlayClick} />}
     </>
   );
 };
