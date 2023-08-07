@@ -32,13 +32,6 @@
   color: rgba(198, 198, 198, 0.717);
 }
 
-.start_game_btn {
-  text-align: center;
-  background-color: gray;
-  color: rgb(16, 16, 16);
-  cursor: pointer;
-}
-
 .game_over {
   font-size: 30px;
   color: rgb(166, 18, 2);
@@ -54,6 +47,7 @@
   padding: 10px;
   background-color: rgb(16, 16, 16);
 }
+
 
 .gamepad_btn {
   width: 40px;
@@ -127,15 +121,16 @@
     border-radius: 7px;
   }
 
-  .start_game_btn {
-    grid-column: 1/ 5;
-    grid-row: 1/2;
-    justify-self: center;
+  .gamepad_wrapper {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    column-gap: 40px;
   }
 
-  .gamepad_wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-    column-gap: 40px;
+  .move_buttons {
+    column-gap: 45px;
+    row-gap: 15px;
+    align-items: center;
   }
 }

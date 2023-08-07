@@ -1,21 +1,15 @@
 import { SuccessItem } from "./SuccessItem";
 import cl from "./styles.module.css";
+import { memo } from "react";
 
 type Props = {
   rows: number;
   level: number;
   score: number;
   gameOver: boolean;
-  onStartGame: () => void;
 };
 
-export const SuccessField = ({
-  rows,
-  level,
-  score,
-  gameOver,
-  onStartGame,
-}: Props) => {
+export const SuccessField = memo(({ rows, level, score, gameOver }: Props) => {
   return (
     <div className={cl.success_field}>
       {gameOver ? (
@@ -27,9 +21,6 @@ export const SuccessField = ({
           <SuccessItem text={`Level : ${level}`} />
         </>
       )}
-      <div className={cl.start_game_btn} onClick={onStartGame}>
-        Start Game
-      </div>
     </div>
   );
-};
+});

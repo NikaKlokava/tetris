@@ -57,7 +57,7 @@ export const TETROMINOES = {
   },
   J: {
     shape: [
-      [0, 1, 0], //1
+      [0, 1, 0],
       [0, 1, 0],
       [1, 1, 0],
     ],
@@ -108,17 +108,12 @@ export const drowTetrominoInField = (
 };
 
 export const getSumInField = (arr: FieldData) => {
-  return arr.reduce((accumulator, fieldRow, rowIndex) => {
-    //slice
-    if (isEqual(rowIndex, arr.length - 1)) return accumulator;
-    const numsInRow = fieldRow.reduce(
-      (accum: number, cell: Cell, index: number) => {
-        if (isEqual(index, 0) || isEqual(index, fieldRow.length - 1))
-          return accum;
+  return arr.slice(0, -1).reduce((accumulator, fieldRow, rowIndex) => {
+    const numsInRow = fieldRow
+      .slice(1, -1)
+      .reduce((accum: number, cell: Cell, index: number) => {
         return accum + cell[0];
-      },
-      0
-    );
+      }, 0);
     return (accumulator += numsInRow);
   }, 0);
 };
@@ -146,9 +141,3 @@ export const rotateFigure = (figure: FigureType) => {
 
   figure.tetromino.shape = shape.map((row) => row.reverse());
 };
-// const linePoints = [40, 100, 300, 1200]
-// const calculateScore = () => {
-//   if(completedRow > 0) {
-//     setScore(prev => prev + linePoints[completedRow - 1] * (level + 1) );
-//   }
-// }

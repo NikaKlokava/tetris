@@ -1,4 +1,5 @@
 import classnames from "classnames";
+import { memo } from "react";
 import cl from "./styles.module.css";
 
 type Props = {
@@ -6,7 +7,7 @@ type Props = {
   onPress: () => void;
   onMouseUp?: () => void;
 };
-export const GamepadBtn = ({ type, onPress, onMouseUp }: Props) => {
+export const GamepadBtn = memo(({ type, onPress, onMouseUp }: Props) => {
   return (
     <div
       className={classnames(cl.gamepad_btn, cl[`btn_${type}`])}
@@ -14,4 +15,4 @@ export const GamepadBtn = ({ type, onPress, onMouseUp }: Props) => {
       onMouseUp={onMouseUp}
     ></div>
   );
-};
+});

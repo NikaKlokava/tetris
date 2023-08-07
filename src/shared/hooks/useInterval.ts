@@ -4,7 +4,7 @@ export const useInterval = (drop: Function, delay: number | null) => {
   const callback = useRef<Function>();
 
   useEffect(() => {
-    callback.current = drop;
+    callback.current = drop; // ?
   }, [drop]);
 
   useEffect(() => {
