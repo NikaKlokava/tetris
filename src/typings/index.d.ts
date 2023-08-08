@@ -28,3 +28,5 @@ declare type FigureColors =
   | "#73E699"
   | "#D7E673"
   | "#E6AA73";
+
+declare type ButtonTypes = "left" | "right" | "down" | "rotate";

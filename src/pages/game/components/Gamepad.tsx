@@ -1,36 +1,32 @@
 import { memo } from "react";
 import classnames from "classnames";
 import cl from "./styles.module.css";
+import Emitter from "../../../shared/emitter/EventEmitter";
 
-type Props = {
-  drop: () => void;
-  move: (dir: -1 | 1) => void;
-  rotate: () => void;
-  up?: () => void;
-};
-
-export const Gamepad = memo(({ drop, move, rotate, up }: Props) => {
+export const Gamepad = memo(() => {
+  const handleBtnClick = (type: ButtonTypes) => {
+    Emitter.emit(type);
+  };
   return (
     <div className={cl.gamepad_wrapper}>
       <div className={cl.move_buttons}>
         <button
           className={classnames(cl.gamepad_btn, cl.btn_left)}
-          onClick={() => move(-1)}
+          onClick={() => handleBtnClick("left")}
         ></button>
         <button
           className={classnames(cl.gamepad_btn, cl.btn_right)}
-          onClick={() => move(1)}
+          onClick={() => handleBtnClick("right")}
         ></button>
         <button
           className={classnames(cl.gamepad_btn, cl.btn_down)}
-          onMouseDown={drop}
-          onMouseUp={up}
+          onClick={() => handleBtnClick("down")}
         ></button>
       </div>
       <div className={cl.rotate_button}>
         <button
-          className={classnames(cl.gamepad_btn, cl.btn_left)}
-          onClick={rotate}
+          className={classnames(cl.gamepad_btn, cl.btn_rotate)}
+          onClick={() => handleBtnClick("rotate")}
         ></button>
       </div>
     </div>

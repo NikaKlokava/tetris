@@ -14,16 +14,8 @@ export const GameContent = () => {
   const [level, setLevel] = useState(0);
   const [pause, setPause] = useState(false);
   const pauseBtn = useRef(false);
-  const {
-    stage,
-    completedRow,
-    gameOver,
-    dropFigure,
-    startGame,
-    moveFigure,
-    moveDownFigure,
-    rotate,
-  } = useStage();
+
+  const { stage, completedRow, gameOver, dropFigure, startGame } = useStage();
 
   const { score, totalRows, updateScore } = useScore({ completedRow, level });
 
@@ -56,10 +48,6 @@ export const GameContent = () => {
 
   useInterval(() => dropFigure(), delay);
 
-  const handleDropFigureClick = () => {
-    moveDownFigure();
-  };
-
   return (
     <>
       <GameField stage={stage} />
@@ -77,12 +65,7 @@ export const GameContent = () => {
           )}
         </div>
         <div className={cl.gamepad_wrapper}>
-          <Gamepad
-            move={moveFigure}
-            drop={handleDropFigureClick}
-            rotate={rotate}
-            // up={handleMouseUp}
-          />
+          <Gamepad />
         </div>
       </div>
       {pause && <PauseModal onPlay={handleResumeGameClick} />}

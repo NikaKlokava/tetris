@@ -11,6 +11,7 @@ import {
 } from "../utils/utils";
 import { useFigure } from "./useFigure";
 import { cloneDeep, isEqual } from "lodash";
+import Emitter from "../emitter/EventEmitter";
 
 const initialStage = createGameField();
 
@@ -58,17 +59,15 @@ export const useStage = () => {
 
   const moveFigure = useCallback(
     (dir: -1 | 1) => {
-      if (!gameOver) {
-        const futureSum = getFutureSum(
-          figureRef.current,
-          prevStageRef.current,
-          dir,
-          0
-        );
-        if (futureSum === prevSumRef.current) updateFigurePos({ x: dir, y: 0 });
-      }
+      const futureSum = getFutureSum(
+        figureRef.current,
+        prevStageRef.current,
+        dir,
+        0
+      );
+      if (futureSum === prevSumRef.current) updateFigurePos({ x: dir, y: 0 });
     },
-    [gameOver, updateFigurePos]
+    [updateFigurePos]
   );
 
   const moveDownFigure = useCallback(() => {
@@ -115,42 +114,48 @@ export const useStage = () => {
   );
 
   useEffect(() => {
-    console.log("add event listener");
-    document.addEventListener("keydown", keydownHandler);
+    if (!gameOver) {
+      document.addEventListener("keydown", keydownHandler);
+
+      Emitter.on("left", () => moveFigure(-1));
+      Emitter.on("right", () => moveFigure(1));
+      Emitter.on("rotate", rotate);
+      Emitter.on("down", moveDownFigure);
+    }
     return () => {
-      console.log("remove event listener");
       document.removeEventListener("keydown", keydownHandler);
+
+      Emitter.off("left");
+      Emitter.off("right");
+      Emitter.off("rotate");
+      Emitter.off("down");
     };
-  }, [keydownHandler]);
+  }, [gameOver, keydownHandler, moveDownFigure, moveFigure, rotate]);
 
   const dropFigure = () => {
-    if (!gameOver) {
-      const isDropped = moveDownFigure();
-      if (!isDropped) {
-        if (figureRef.current.position.y < 1) {
-          setGameOver(true);
-        }
-
-        // clearCompletedRow
-        stage.forEach((row) => {
-          const sumInRow = row.reduce((accum, curr) => {
-            accum += curr[0];
-            return accum;
-          }, 0);
-
-          if (isEqual(sumInRow, FIELD_WIDTH)) {
-            const index = stage.indexOf(row);
-            stage.splice(index, 1);
-            stage.unshift(
-              new Array(row.length).fill([0, EMPTY_TETROMINO.color])
-            );
-            setCompletedRows((prev) => prev + 1);
-          }
-        });
-
-        prevStageRef.current = stage;
-        createNewFigure();
+    const isDropped = moveDownFigure();
+    if (!isDropped) {
+      if (figureRef.current.position.y < 1) {
+        setGameOver(true);
       }
+
+      // clearCompletedRow
+      stage.forEach((row) => {
+        const sumInRow = row.reduce((accum, curr) => {
+          accum += curr[0];
+          return accum;
+        }, 0);
+
+        if (isEqual(sumInRow, FIELD_WIDTH)) {
+          const index = stage.indexOf(row);
+          stage.splice(index, 1);
+          stage.unshift(new Array(row.length).fill([0, EMPTY_TETROMINO.color]));
+          setCompletedRows((prev) => prev + 1);
+        }
+      });
+
+      prevStageRef.current = stage;
+      createNewFigure();
     }
   };
 
