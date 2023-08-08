@@ -33,16 +33,12 @@ export const useStage = () => {
   }, [figure]);
 
   useEffect(() => {
-    const drawFigure = () => {
-      setCompletedRows(0);
-      const occupiedStage = getOccupiedStage(prevStageRef.current);
-      drowTetrominoInField(figure, occupiedStage, 0, 0);
-      prevSumRef.current = getSumInField(occupiedStage);
+    setCompletedRows(0);
+    const occupiedStage = getOccupiedStage(prevStageRef.current);
+    drowTetrominoInField(figure, occupiedStage, 0, 0);
+    prevSumRef.current = getSumInField(occupiedStage);
 
-      setStage(occupiedStage);
-    };
-
-    drawFigure();
+    setStage(occupiedStage);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [figure]);
 
@@ -71,21 +67,19 @@ export const useStage = () => {
   );
 
   const moveDownFigure = useCallback(() => {
-    if (!gameOver) {
-      const futureSum = getFutureSum(
-        figureRef.current,
-        prevStageRef.current,
-        0,
-        1
-      );
+    const futureSum = getFutureSum(
+      figureRef.current,
+      prevStageRef.current,
+      0,
+      1
+    );
 
-      if (futureSum === prevSumRef.current) {
-        updateFigurePos({ x: 0, y: 1 });
-        return true;
-      }
-      return false;
+    if (futureSum === prevSumRef.current) {
+      updateFigurePos({ x: 0, y: 1 });
+      return true;
     }
-  }, [gameOver, updateFigurePos]);
+    return false;
+  }, [updateFigurePos]);
 
   const keydownHandler = useCallback(
     (event: KeyboardEvent) => {
@@ -108,7 +102,7 @@ export const useStage = () => {
           break;
         }
       }
-      event.preventDefault();
+      // event.preventDefault();
     },
     [moveFigure, moveDownFigure, rotate]
   );
@@ -117,19 +111,14 @@ export const useStage = () => {
     if (!gameOver) {
       document.addEventListener("keydown", keydownHandler);
 
-      Emitter.on("left", () => moveFigure(-1));
-      Emitter.on("right", () => moveFigure(1));
-      Emitter.on("rotate", rotate);
-      Emitter.on("down", moveDownFigure);
-    }
-    return () => {
-      document.removeEventListener("keydown", keydownHandler);
+      Emitter.on("gamepadPress", (btnEvent) => keydownHandler(btnEvent));
 
-      Emitter.off("left");
-      Emitter.off("right");
-      Emitter.off("rotate");
-      Emitter.off("down");
-    };
+      return () => {
+        document.removeEventListener("keydown", keydownHandler);
+
+        Emitter.off("gamepadPress");
+      };
+    }
   }, [gameOver, keydownHandler, moveDownFigure, moveFigure, rotate]);
 
   const dropFigure = () => {

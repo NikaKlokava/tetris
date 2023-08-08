@@ -30,3 +30,5 @@ declare type FigureColors =
   | "#E6AA73";
 
 declare type ButtonTypes = "left" | "right" | "down" | "rotate";
+
+declare type GamepadTypes = "ArrowLeft" | "ArrowRight" | "ArrowDown"| "ArrowUp"

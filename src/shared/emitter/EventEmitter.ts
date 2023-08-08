@@ -3,9 +3,11 @@ import EventEmitter from "eventemitter3";
 const eventEmitter = new EventEmitter();
 
 const Emitter = {
-  on: (event: string, fn: () => void) => eventEmitter.on(event, fn),
+  on: (event: string, fn: (event: KeyboardEvent) => void) =>
+    eventEmitter.on(event, fn),
   off: (event: string) => eventEmitter.off(event),
-  emit: (event: string) => eventEmitter.emit(event),
+  emit: (event: string, type: { key: GamepadTypes }) =>
+    eventEmitter.emit(event, type),
 };
 
 Object.freeze(Emitter);
