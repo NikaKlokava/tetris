@@ -95,13 +95,11 @@ export const drowTetrominoInField = (
   moveX?: number,
   moveY?: number
 ) => {
-  figure.tetromino.shape.forEach((row: any, y: any) => {
-    row.forEach((elem: any, x: any) => {
+  figure.tetromino.shape.forEach((row: Array<number>, y: number) => {
+    row.forEach((elem: number, x: number) => {
       if (isEqual(elem, 1)) {
-        stage[y + figure.position.y + moveY][x + figure.position.x + moveX] = [
-          elem,
-          figure.tetromino.color,
-        ];
+        stage[y + figure.position.y + moveY!][x + figure.position.x + moveX!] =
+          [elem, figure.tetromino.color];
       }
     });
   });
