@@ -18,3 +18,17 @@ declare type FigureType = {
   };
   tetromino: { shape: number[][]; color: string };
 };
+
+declare type FigureColors =
+  | "rgb(16,16,16)"
+  | "#E0659E"
+  | "#C98FE3"
+  | "#7579E6"
+  | "#7CCFCF"
+  | "#73E699"
+  | "#D7E673"
+  | "#E6AA73";
+
+declare type ButtonTypes = "left" | "right" | "down" | "rotate";
+
+declare type GamepadTypes = "ArrowLeft" | "ArrowRight" | "ArrowDown"| "ArrowUp"

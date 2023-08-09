@@ -11,12 +11,12 @@ export const useFigure = () => {
     tetromino: EMPTY_TETROMINO,
   });
 
-  const updateFigurePos = ({ x, y }: FigurePosition) => {
+  const updateFigurePos = useCallback(({ x, y }: FigurePosition) => {
     setFigure((prev) => ({
       ...prev,
       position: { x: (prev.position.x += x), y: (prev.position.y += y) },
     }));
-  };
+  }, []);
 
   const createNewFigure = useCallback((): void => {
     setFigure({
@@ -25,9 +25,9 @@ export const useFigure = () => {
     });
   }, []);
 
-  const updateFigure = (newFigure: FigureType) => {
+  const updateFigure = useCallback((newFigure: FigureType) => {
     setFigure(newFigure);
-  };
+  }, []);
 
   return { figure, updateFigurePos, updateFigure, createNewFigure };
 };
