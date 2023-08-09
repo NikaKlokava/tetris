@@ -20,7 +20,7 @@ export const GameContent = () => {
   const { score, totalRows, updateScore } = useScore({ completedRow, level });
 
   useEffect(() => {
-    if (totalRows > (level + 1) * 1) {
+    if (totalRows > (level + 1) * 10) {
       setLevel((prev) => prev + 1);
       setDelay(1000 / (level + 1) + 200);
     }
@@ -59,7 +59,10 @@ export const GameContent = () => {
           gameOver={gameOver}
         />
         <div className={cl.start_pause_wrapper}>
-          <Button text="Start Game" onPress={handleStartGameClick} />
+          <Button
+            text={pauseBtn.current ? "Restart" : "Start Game"}
+            onPress={handleStartGameClick}
+          />
           {pauseBtn.current && !gameOver && (
             <Button text="Pause" onPress={handlePauseGameClick} />
           )}
