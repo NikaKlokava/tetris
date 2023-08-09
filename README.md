@@ -2,6 +2,30 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+#
+
+# _`Tetris`_
+
+## Work with:
+
+- github actions(create workflow with SSH);
+- react components;
+- class component;
+- react hooks: _useEffect, useRef, useState, useCallback_;
+- custom hooks;
+- libraries :
+  - react-router-dom;
+  - classnames;
+  - lodash;
+  - eventemitter3;
+- custom event emitter;
+- memoization;
+- css modules;
+
+## [_Website_](https://NikaKlokava.github.io/tetris)
+
+#
+
 ## Available Scripts
 
 In the project directory, you can run:
