@@ -102,7 +102,7 @@ export const useStage = () => {
           break;
         }
       }
-      // event.preventDefault();
+      event.preventDefault?.();
     },
     [moveFigure, moveDownFigure, rotate]
   );
