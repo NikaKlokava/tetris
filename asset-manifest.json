@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/tetris/static/css/main.463886fe.css",
-    "main.js": "/tetris/static/js/main.47e5a903.js",
+    "main.css": "/tetris/static/css/main.2a5e42ae.css",
+    "main.js": "/tetris/static/js/main.e5a5a4fc.js",
     "static/media/background.png": "/tetris/static/media/background.4205f17adc44271d8874.png",
     "static/media/github.svg": "/tetris/static/media/github.a52ce0f17f1163bde7de.svg",
     "static/media/instagram.svg": "/tetris/static/media/instagram.f3fb77b8c5c32003a835.svg",
+    "static/media/pause.svg": "/tetris/static/media/pause.1bb93e31e7da4625256f.svg",
     "static/media/linkedin.svg": "/tetris/static/media/linkedin.9a0dbd7c052bc7486050.svg",
     "index.html": "/tetris/index.html",
     "static/media/rotate.svg": "/tetris/static/media/rotate.53515bc2d898dcfd71a8.svg",
     "static/media/left.svg": "/tetris/static/media/left.eabc13152a8ee911619b.svg",
     "static/media/right.svg": "/tetris/static/media/right.7082aa3b8b8b66ed95a9.svg",
     "static/media/down.svg": "/tetris/static/media/down.832d7655666a1d7462d5.svg",
-    "main.463886fe.css.map": "/tetris/static/css/main.463886fe.css.map",
-    "main.47e5a903.js.map": "/tetris/static/js/main.47e5a903.js.map"
+    "main.2a5e42ae.css.map": "/tetris/static/css/main.2a5e42ae.css.map",
+    "main.e5a5a4fc.js.map": "/tetris/static/js/main.e5a5a4fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.463886fe.css",
-    "static/js/main.47e5a903.js"
+    "static/css/main.2a5e42ae.css",
+    "static/js/main.e5a5a4fc.js"
   ]
 }
