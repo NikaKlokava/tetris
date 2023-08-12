@@ -62,9 +62,14 @@ export const GameContent = () => {
           <Button
             text={pauseBtn.current ? "Restart" : "Start Game"}
             onPress={handleStartGameClick}
+            testId={"start-game-btn"}
           />
           {pauseBtn.current && !gameOver && (
-            <Button text="Pause" onPress={handlePauseGameClick} />
+            <Button
+              text="Pause"
+              onPress={handlePauseGameClick}
+              testId={"pause-game-btn"}
+            />
           )}
         </div>
         <div className={cl.gamepad_wrapper}>

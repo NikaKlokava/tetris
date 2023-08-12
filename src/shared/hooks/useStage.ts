@@ -154,6 +154,10 @@ export const useStage = () => {
     prevStageRef.current = initialStage;
   };
 
+  const changeOnGameOver = () => {
+    setGameOver(true);
+  };
+
   return {
     stage,
     completedRow,
@@ -163,5 +167,6 @@ export const useStage = () => {
     moveDownFigure,
     rotate,
     startGame,
+    changeOnGameOver,
   };
 };

@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/tetris" element={<Tetris />} />
+        <Route path="/" element={<Tetris />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
