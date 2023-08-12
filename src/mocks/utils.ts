@@ -1,44 +1,8 @@
 const stColor = "rgb(16,16,16)";
 
-const emptyArrData = [
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-];
-export const mockEmptyStage = [
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-];
+const emptyArrData = Array.from({ length: 14 }, () => [0, stColor]);
+
+export const mockEmptyStage = Array.from({ length: 21 }, () => emptyArrData);
 
 export const mockFigureT = {
   position: { x: 6, y: 0 },
@@ -53,57 +17,22 @@ export const mockFigureT = {
 };
 
 const dataWithFigure1 = [
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
+  ...Array.from({ length: 6 }, () => [0, stColor]),
   [1, mockFigureT.tetromino.color],
   [1, mockFigureT.tetromino.color],
   [1, mockFigureT.tetromino.color],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
+  ...Array.from({ length: 5 }, () => [0, stColor]),
 ];
 const dataWithFigure2 = [
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
+  ...Array.from({ length: 7 }, () => [0, stColor]),
   [1, mockFigureT.tetromino.color],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
-  [0, stColor],
+  ...Array.from({ length: 6 }, () => [0, stColor]),
 ];
 
 export const mockStageWithFigure = [
   dataWithFigure1,
   dataWithFigure2,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
-  emptyArrData,
+  ...Array.from({ length: 19 }, () => emptyArrData),
 ];
+
+export const mockSumInField = 4;

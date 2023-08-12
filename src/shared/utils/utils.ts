@@ -92,8 +92,8 @@ export const getOccupiedStage = (prevStage: FieldData | null): FieldData => {
 export const drowTetrominoInField = (
   figure: FigureType,
   stage: FieldData,
-  moveX?: number,
-  moveY?: number
+  moveX =  0,
+  moveY = 0,
 ) => {
   figure.tetromino.shape.forEach((row: Array<number>, y: number) => {
     row.forEach((elem: number, x: number) => {
