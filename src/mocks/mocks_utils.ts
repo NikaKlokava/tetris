@@ -2,6 +2,8 @@ const stColor = "rgb(16,16,16)";
 
 const emptyArrData = Array.from({ length: 14 }, () => [0, stColor]);
 
+export const mockSumInField = 4;
+
 export const mockEmptyStage = Array.from({ length: 21 }, () => emptyArrData);
 
 export const mockFigureT = {
@@ -16,23 +18,39 @@ export const mockFigureT = {
   },
 };
 
-const dataWithFigure1 = [
+const rowWithFigure1 = [
   ...Array.from({ length: 6 }, () => [0, stColor]),
   [1, mockFigureT.tetromino.color],
   [1, mockFigureT.tetromino.color],
   [1, mockFigureT.tetromino.color],
   ...Array.from({ length: 5 }, () => [0, stColor]),
 ];
-const dataWithFigure2 = [
+const rowWithFigure2 = [
   ...Array.from({ length: 7 }, () => [0, stColor]),
   [1, mockFigureT.tetromino.color],
   ...Array.from({ length: 6 }, () => [0, stColor]),
 ];
+const rowWithRotatedFigure1 = [
+  ...Array.from({ length: 8 }, () => [0, stColor]),
+  [1, mockFigureT.tetromino.color],
+  ...Array.from({ length: 5 }, () => [0, stColor]),
+];
+const rowWithRotatedFigure2 = [
+  ...Array.from({ length: 7 }, () => [0, stColor]),
+  [1, mockFigureT.tetromino.color],
+  [1, mockFigureT.tetromino.color],
+  ...Array.from({ length: 5 }, () => [0, stColor]),
+];
 
 export const mockStageWithFigure = [
-  dataWithFigure1,
-  dataWithFigure2,
+  rowWithFigure1,
+  rowWithFigure2,
   ...Array.from({ length: 19 }, () => emptyArrData),
 ];
 
-export const mockSumInField = 4;
+export const mockStageWithRotatedFigure = [
+  rowWithRotatedFigure1,
+  rowWithRotatedFigure2,
+  rowWithRotatedFigure1,
+  ...Array.from({ length: 18 }, () => emptyArrData),
+];

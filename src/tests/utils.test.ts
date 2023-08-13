@@ -3,31 +3,38 @@ import {
   mockEmptyStage,
   mockSumInField,
   mockStageWithFigure,
-} from "../mocks/utils";
+  mockStageWithRotatedFigure,
+} from "../mocks/mocks_utils";
 import {
   createGameField,
   drowTetrominoInField,
   getOccupiedStage,
   getSumInField,
+  rotateFigure,
 } from "../shared/utils/utils";
 
-test("the function should return a field data", () => {
+test("The function should return the field data", () => {
   const result = createGameField();
   expect(result).toEqual(mockEmptyStage);
 });
 
-test("function should drow tetro in field", () => {
+test("The function should drow tetro in field", () => {
   const newStage = getOccupiedStage(mockEmptyStage);
   drowTetrominoInField(mockFigureT, newStage);
 
   expect(newStage).toEqual(mockStageWithFigure);
 });
 
-test("function should return total summ in field", () => {
+test("The function should return the total sum in field", () => {
   const sum = getSumInField(mockStageWithFigure);
   expect(sum).toEqual(mockSumInField);
 });
 
-// test("function should rotate the figure in field", () => {
+test("The function should rotate the figure in field", () => {
+  rotateFigure(mockFigureT);
 
-// })
+  const newStage = getOccupiedStage(mockEmptyStage);
+  drowTetrominoInField(mockFigureT, newStage);
+
+  expect(newStage).toEqual(mockStageWithRotatedFigure);
+});
