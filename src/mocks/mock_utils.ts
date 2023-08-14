@@ -115,3 +115,7 @@ export const mockTetrominoes = [
 ];
 
 export const mockFigurePos = { x: 5, y: 0 };
+
+export const mockScore = { completedRow: 2, level: 1 };
+
+export const mockScoreResults = { score: 200, rows: 2, default: 0};

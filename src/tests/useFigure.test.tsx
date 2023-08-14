@@ -3,7 +3,7 @@ import {
   mockFigurePos,
   mockFigureTypeT,
   mockTetrominoes,
-} from "../mocks/mocks_utils";
+} from "../mocks/mock_utils";
 import { useFigure } from "../shared/hooks/useFigure";
 import { isEqual } from "lodash";
 
@@ -43,6 +43,6 @@ test("The function should update the figure", () => {
   act(() => {
     result.current.updateFigure(mockFigureTypeT);
   });
-  
+
   expect(result.current.figure).toEqual(mockFigureTypeT);
 });

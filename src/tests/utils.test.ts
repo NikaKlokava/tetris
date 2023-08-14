@@ -5,7 +5,7 @@ import {
   mockStageWithFigure,
   mockStageWithRotatedFigure,
   mockTetrominoes,
-} from "../mocks/mocks_utils";
+} from "../mocks/mock_utils";
 import {
   createGameField,
   drowTetrominoInField,
