@@ -8,7 +8,7 @@ import {
 } from "../mocks/mock_utils";
 import {
   createGameField,
-  drowTetrominoInField,
+  drawTetrominoInField,
   getOccupiedStage,
   getRandomTetromino,
   getSumInField,
@@ -34,7 +34,7 @@ test("The function should return the random tetromino", () => {
 
 test("The function should drow tetro in field", () => {
   const newStage = getOccupiedStage(mockEmptyStage);
-  drowTetrominoInField(mockFigureTypeT, newStage);
+  drawTetrominoInField(mockFigureTypeT, newStage);
 
   expect(newStage).toEqual(mockStageWithFigure);
 });
@@ -48,7 +48,7 @@ test("The function should rotate the figure in field", () => {
   rotateFigure(mockFigureTypeT);
 
   const newStage = getOccupiedStage(mockEmptyStage);
-  drowTetrominoInField(mockFigureTypeT, newStage);
+  drawTetrominoInField(mockFigureTypeT, newStage);
 
   expect(newStage).toEqual(mockStageWithRotatedFigure);
 });
