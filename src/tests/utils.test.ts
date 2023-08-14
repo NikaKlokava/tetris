@@ -1,5 +1,5 @@
 import {
-  mockFigureT,
+  mockFigureTypeT,
   mockEmptyStage,
   mockSumInField,
   mockStageWithFigure,
@@ -34,7 +34,7 @@ test("The function should return the random tetromino", () => {
 
 test("The function should drow tetro in field", () => {
   const newStage = getOccupiedStage(mockEmptyStage);
-  drowTetrominoInField(mockFigureT, newStage);
+  drowTetrominoInField(mockFigureTypeT, newStage);
 
   expect(newStage).toEqual(mockStageWithFigure);
 });
@@ -45,10 +45,10 @@ test("The function should return the total sum in field", () => {
 });
 
 test("The function should rotate the figure in field", () => {
-  rotateFigure(mockFigureT);
+  rotateFigure(mockFigureTypeT);
 
   const newStage = getOccupiedStage(mockEmptyStage);
-  drowTetrominoInField(mockFigureT, newStage);
+  drowTetrominoInField(mockFigureTypeT, newStage);
 
   expect(newStage).toEqual(mockStageWithRotatedFigure);
 });

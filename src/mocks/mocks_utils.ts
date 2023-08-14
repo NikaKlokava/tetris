@@ -6,7 +6,7 @@ export const mockSumInField = 4;
 
 export const mockEmptyStage = Array.from({ length: 21 }, () => emptyArrData);
 
-export const mockFigureT = {
+export const mockFigureTypeT = {
   position: { x: 6, y: 0 },
   tetromino: {
     shape: [
@@ -20,25 +20,25 @@ export const mockFigureT = {
 
 const rowWithFigure1 = [
   ...Array.from({ length: 6 }, () => [0, stColor]),
-  [1, mockFigureT.tetromino.color],
-  [1, mockFigureT.tetromino.color],
-  [1, mockFigureT.tetromino.color],
+  [1, mockFigureTypeT.tetromino.color],
+  [1, mockFigureTypeT.tetromino.color],
+  [1, mockFigureTypeT.tetromino.color],
   ...Array.from({ length: 5 }, () => [0, stColor]),
 ];
 const rowWithFigure2 = [
   ...Array.from({ length: 7 }, () => [0, stColor]),
-  [1, mockFigureT.tetromino.color],
+  [1, mockFigureTypeT.tetromino.color],
   ...Array.from({ length: 6 }, () => [0, stColor]),
 ];
 const rowWithRotatedFigure1 = [
   ...Array.from({ length: 8 }, () => [0, stColor]),
-  [1, mockFigureT.tetromino.color],
+  [1, mockFigureTypeT.tetromino.color],
   ...Array.from({ length: 5 }, () => [0, stColor]),
 ];
 const rowWithRotatedFigure2 = [
   ...Array.from({ length: 7 }, () => [0, stColor]),
-  [1, mockFigureT.tetromino.color],
-  [1, mockFigureT.tetromino.color],
+  [1, mockFigureTypeT.tetromino.color],
+  [1, mockFigureTypeT.tetromino.color],
   ...Array.from({ length: 5 }, () => [0, stColor]),
 ];
 
