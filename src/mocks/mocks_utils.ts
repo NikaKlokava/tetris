@@ -54,3 +54,64 @@ export const mockStageWithRotatedFigure = [
   rowWithRotatedFigure1,
   ...Array.from({ length: 18 }, () => emptyArrData),
 ];
+
+export const mockTetrominoes = [
+  {
+    shape: [
+      [0, 1, 0, 0],
+      [0, 1, 0, 0],
+      [0, 1, 0, 0],
+      [0, 1, 0, 0],
+    ],
+    color: "#E0659E",
+  },
+  {
+    shape: [
+      [1, 1],
+      [1, 1],
+    ],
+    color: "#C98FE3",
+  },
+  {
+    shape: [
+      [1, 1, 1],
+      [0, 1, 0],
+      [0, 0, 0],
+    ],
+    color: "#7579E6",
+  },
+  {
+    shape: [
+      [0, 1, 1],
+      [1, 1, 0],
+      [0, 0, 0],
+    ],
+    color: "#7CCFCF",
+  },
+  {
+    shape: [
+      [1, 1, 0],
+      [0, 1, 1],
+      [0, 0, 0],
+    ],
+    color: "#73E699",
+  },
+  {
+    shape: [
+      [0, 1, 0],
+      [0, 1, 0],
+      [1, 1, 0],
+    ],
+    color: "#D7E673",
+  },
+  {
+    shape: [
+      [0, 1, 0],
+      [0, 1, 0],
+      [0, 1, 1],
+    ],
+    color: "#E6AA73",
+  },
+];
+
+export const mockFigurePos = { x: 5, y: 0 };

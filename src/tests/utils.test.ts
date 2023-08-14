@@ -4,18 +4,32 @@ import {
   mockSumInField,
   mockStageWithFigure,
   mockStageWithRotatedFigure,
+  mockTetrominoes,
 } from "../mocks/mocks_utils";
 import {
   createGameField,
   drowTetrominoInField,
   getOccupiedStage,
+  getRandomTetromino,
   getSumInField,
   rotateFigure,
 } from "../shared/utils/utils";
 
+import { isEqual } from "lodash";
+
 test("The function should return the field data", () => {
   const result = createGameField();
   expect(result).toEqual(mockEmptyStage);
+});
+
+test("The function should return the random tetromino", () => {
+  const randomTetro = getRandomTetromino();
+
+  const isTetroPresent =
+    mockTetrominoes.findIndex((mockTetro) => {
+      return isEqual(mockTetro, randomTetro);
+    }) !== 1;
+  expect(isTetroPresent).toBeTruthy();
 });
 
 test("The function should drow tetro in field", () => {
