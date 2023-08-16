@@ -4,6 +4,7 @@ import { clone } from "lodash";
 export const FIELD_WIDTH = 12;
 export const FIELD_HEIGHT = 20;
 
+export const initialPosition = { x: FIELD_WIDTH / 2 - 1, y: 0 };
 export const linePoints = [40, 100, 300, 1200];
 
 export const createGameField = (): FieldData => {
