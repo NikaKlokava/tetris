@@ -6,9 +6,9 @@ import {
   mockStageWithFigureDown,
   mockStageWithFigureLeft,
   mockStageWithFigureRight,
-} from "../mocks/mock_utils";
-import * as mockUtils from "../shared/utils/utils";
-import { useStage } from "../shared/hooks/useStage";
+} from "../../mocks/mock_utils";
+import * as mockUtils from "../../shared/utils/utils";
+import { useStage } from "../../shared/hooks/useStage";
 
 afterEach(() => {
   jest.clearAllMocks();

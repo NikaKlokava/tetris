@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Tablo component The Tablo renders correctly 1`] = `
+<div
+  className="tablo"
+>
+  <div
+    className="tablo_item"
+  >
+    Score : 0
+  </div>
+  <div
+    className="tablo_item"
+  >
+    Rows : 0
+  </div>
+  <div
+    className="tablo_item"
+  >
+    Level : 0
+  </div>
+</div>
+`;

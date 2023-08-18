@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Gamepad component The Gamepad renders correctly 1`] = `
+<div
+  className="gamepad_wrapper"
+>
+  <div
+    className="move_buttons"
+  >
+    <button
+      className="gamepad_btn btn_left"
+      data-testid="gamepad-btn"
+      onClick={[Function]}
+    />
+    <button
+      className="gamepad_btn btn_right"
+      data-testid="gamepad-btn"
+      onClick={[Function]}
+    />
+    <button
+      className="gamepad_btn btn_down"
+      data-testid="gamepad-btn"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="rotate_button"
+  >
+    <button
+      className="gamepad_btn btn_rotate"
+      data-testid="gamepad-btn"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;

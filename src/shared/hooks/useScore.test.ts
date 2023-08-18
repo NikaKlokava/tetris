@@ -1,6 +1,6 @@
 import { act, renderHook } from "@testing-library/react";
-import { mockScore, mockScoreResults } from "../mocks/mock_utils";
-import { useScore } from "../shared/hooks/useScore";
+import { mockScore, mockScoreResults } from "../../mocks/mock_utils";
+import { useScore } from "../hooks/useScore";
 
 describe("Test the useScore hook", () => {
   test("The score should changes when you pass the data", () => {

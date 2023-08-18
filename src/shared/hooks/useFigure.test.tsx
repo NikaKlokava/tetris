@@ -1,8 +1,8 @@
 import { act, renderHook } from "@testing-library/react";
-import { mockFigureTypeT, mockTetrominoes } from "../mocks/mock_utils";
-import { useFigure } from "../shared/hooks/useFigure";
+import { mockFigureTypeT, mockTetrominoes } from "../../mocks/mock_utils";
+import { useFigure } from "./useFigure";
 import { isEqual } from "lodash";
-import { initialPosition } from "../shared/utils/utils";
+import { initialPosition } from "../utils/utils";
 
 describe("Test the useFigure hook", () => {
   test("The function should create a new figure", () => {

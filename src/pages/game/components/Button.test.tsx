@@ -1,7 +1,7 @@
 import { render, renderHook, screen } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
-import { useStage } from "../shared/hooks/useStage";
-import App from "../App";
+import { useStage } from "../../../shared/hooks/useStage";
+import App from "../../../App";
 
 describe("Test buttons", () => {
   describe("The start game button is present on the screen", () => {

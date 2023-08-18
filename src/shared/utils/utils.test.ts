@@ -5,7 +5,7 @@ import {
   mockStageWithFigure,
   mockStageWithRotatedFigure,
   mockTetrominoes,
-} from "../mocks/mock_utils";
+} from "../../mocks/mock_utils";
 import {
   createGameField,
   drawTetrominoInField,
@@ -13,7 +13,7 @@ import {
   getRandomTetromino,
   getSumInField,
   rotateFigure,
-} from "../shared/utils/utils";
+} from "./utils";
 
 import { isEqual } from "lodash";
 
