@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tetris/static/css/main.b4608afe.css",
-    "main.js": "/tetris/static/js/main.e5a5a4fc.js",
+    "main.css": "/tetris/static/css/main.53b53579.css",
+    "main.js": "/tetris/static/js/main.4f0c9ab0.js",
     "static/media/background.png": "/tetris/static/media/background.4205f17adc44271d8874.png",
     "static/media/github.svg": "/tetris/static/media/github.a52ce0f17f1163bde7de.svg",
     "static/media/instagram.svg": "/tetris/static/media/instagram.f3fb77b8c5c32003a835.svg",
@@ -12,11 +12,11 @@
     "static/media/left.svg": "/tetris/static/media/left.eabc13152a8ee911619b.svg",
     "static/media/right.svg": "/tetris/static/media/right.7082aa3b8b8b66ed95a9.svg",
     "static/media/down.svg": "/tetris/static/media/down.832d7655666a1d7462d5.svg",
-    "main.b4608afe.css.map": "/tetris/static/css/main.b4608afe.css.map",
-    "main.e5a5a4fc.js.map": "/tetris/static/js/main.e5a5a4fc.js.map"
+    "main.53b53579.css.map": "/tetris/static/css/main.53b53579.css.map",
+    "main.4f0c9ab0.js.map": "/tetris/static/js/main.4f0c9ab0.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4608afe.css",
-    "static/js/main.e5a5a4fc.js"
+    "static/css/main.53b53579.css",
+    "static/js/main.4f0c9ab0.js"
   ]
 }
