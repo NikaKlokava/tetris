@@ -1,0 +1,3855 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the GameContent component The GameContent renders correctly 1`] = `
+<div
+  className="game_field_wrapper"
+>
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Test the GameField component The GameField renders correctly 1`] = `
+<div
+  className="game_field_wrapper"
+>
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+  <div
+    className="cell"
+    style={
+      Object {
+        "backgroundColor": "rgb(16,16,16)",
+      }
+    }
+  />
+</div>
+`;

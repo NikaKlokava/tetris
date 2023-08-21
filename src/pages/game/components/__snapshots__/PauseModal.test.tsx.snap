@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the GameContent component The GameContent renders correctly 1`] = `
+<div
+  className="modal_wrapper"
+>
+  <div
+    className="modal_container"
+  >
+    <button
+      className="game_btn"
+      onClick={[Function]}
+    >
+      Resume
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Test the PauseModal component The PauseModal renders correctly 1`] = `
+<div
+  className="modal_wrapper"
+>
+  <div
+    className="modal_container"
+  >
+    <button
+      className="game_btn"
+      onClick={[Function]}
+    >
+      Resume
+    </button>
+  </div>
+</div>
+`;

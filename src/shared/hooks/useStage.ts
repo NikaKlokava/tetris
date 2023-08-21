@@ -4,7 +4,7 @@ import {
   createGameField,
   getSumInField,
   getOccupiedStage,
-  drowTetrominoInField,
+  drawTetrominoInField,
   rotateFigure,
   EMPTY_TETROMINO,
   FIELD_WIDTH,
@@ -35,7 +35,7 @@ export const useStage = () => {
   useEffect(() => {
     setCompletedRows(0);
     const occupiedStage = getOccupiedStage(prevStageRef.current);
-    drowTetrominoInField(figure, occupiedStage, 0, 0);
+    drawTetrominoInField(figure, occupiedStage, 0, 0);
     prevSumRef.current = getSumInField(occupiedStage);
 
     setStage(occupiedStage);
@@ -154,6 +154,10 @@ export const useStage = () => {
     prevStageRef.current = initialStage;
   };
 
+  const changeOnGameOver = () => {
+    setGameOver(true);
+  };
+
   return {
     stage,
     completedRow,
@@ -163,5 +167,6 @@ export const useStage = () => {
     moveDownFigure,
     rotate,
     startGame,
+    changeOnGameOver,
   };
 };
