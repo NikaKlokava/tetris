@@ -4,6 +4,7 @@ import { clone } from "lodash";
 export const FIELD_WIDTH = 12;
 export const FIELD_HEIGHT = 20;
 
+export const initialPosition = { x: FIELD_WIDTH / 2 - 1, y: 0 };
 export const linePoints = [40, 100, 300, 1200];
 
 export const createGameField = (): FieldData => {
@@ -89,11 +90,11 @@ export const getOccupiedStage = (prevStage: FieldData | null): FieldData => {
   );
 };
 
-export const drowTetrominoInField = (
+export const drawTetrominoInField = (
   figure: FigureType,
   stage: FieldData,
-  moveX?: number,
-  moveY?: number
+  moveX = 0,
+  moveY = 0
 ) => {
   figure.tetromino.shape.forEach((row: Array<number>, y: number) => {
     row.forEach((elem: number, x: number) => {
@@ -125,7 +126,7 @@ export const getFutureSum = (
   const copyStage = clone(stage);
   const occupiedFutureStage = getOccupiedStage(copyStage);
 
-  drowTetrominoInField(figure, occupiedFutureStage, moveX, moveY);
+  drawTetrominoInField(figure, occupiedFutureStage, moveX, moveY);
 
   return getSumInField(occupiedFutureStage);
 };

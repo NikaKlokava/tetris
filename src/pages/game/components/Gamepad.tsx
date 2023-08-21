@@ -13,20 +13,24 @@ export const Gamepad = memo(() => {
         <button
           className={classnames(cl.gamepad_btn, cl.btn_left)}
           onClick={() => handleLeftClick("ArrowLeft")}
+          data-testid={"gamepad-btn"}
         ></button>
         <button
           className={classnames(cl.gamepad_btn, cl.btn_right)}
           onClick={() => handleLeftClick("ArrowRight")}
+          data-testid={"gamepad-btn"}
         ></button>
         <button
           className={classnames(cl.gamepad_btn, cl.btn_down)}
           onClick={() => handleLeftClick("ArrowDown")}
+          data-testid={"gamepad-btn"}
         ></button>
       </div>
       <div className={cl.rotate_button}>
         <button
           className={classnames(cl.gamepad_btn, cl.btn_rotate)}
           onClick={() => handleLeftClick("ArrowUp")}
+          data-testid={"gamepad-btn"}
         ></button>
       </div>
     </div>
