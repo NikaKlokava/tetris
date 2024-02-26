@@ -1,10 +1,17 @@
-# Getting Started with Create React App
+# <p align="center"> _*`Tetris`*_ </p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [_Website_](https://NikaKlokava.github.io/tetris)
 
-#
+### Project
 
-# _`Tetris`_
+- Tetris is a popular game, which is a field of 12 by 20 cells, certain types of figures fall from top to bottom in a completely random order.
+- They must be positioned in such a way that they fit the shape and do not create empty spaces.
+- The figures can only be moved horizontally, and you can also rotate the figures in different directions around their axis.
+- You can speed up the falling speed of the figure.
+- If you fill one row with no spaces, it will clear and one more row of pieces will be available, but if you fill all the rows with figures, the game will be over.
+- The more rows you clear, the more points you get.
+- Keep track of your game progress and score as many points as possible.
+- The more points you score, the faster the figures fall.
 
 ## Work with:
 
@@ -21,36 +28,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - custom event emitter;
 - memoization;
 - css modules;
-
-## [_Website_](https://NikaKlokava.github.io/tetris)
-
-#
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
